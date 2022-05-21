@@ -3,6 +3,7 @@ www:
   container_name: www
   restart: always
   ports:
+   #- "80:80" #port 80 is not available in my test environment
     - "8080:80"
   volumes:
       - ./html:/usr/share/nginx/html:ro
